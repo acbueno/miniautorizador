@@ -9,8 +9,6 @@ import br.com.acbueno.sumare.miniautorizador.entity.Cartao;
 import br.com.acbueno.sumare.miniautorizador.entity.Transacao;
 import br.com.acbueno.sumare.miniautorizador.repository.CartaoRepository;
 import br.com.acbueno.sumare.miniautorizador.repository.TransacaoRepository;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 
 @Service
 public class TransacaoService {
