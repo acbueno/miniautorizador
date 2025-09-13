@@ -14,6 +14,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.persistence.Version;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -47,9 +48,14 @@ public class Cartao {
 	@Builder.Default
 	private List<Transacao> transacoes = new ArrayList<>();
 	
+	@Version
+	private Long version;
+	
     public void adicionarTransacao(Transacao tx) {
         tx.setCartao(this);
         transacoes.add(tx);
     }
+    
+    
 
 }

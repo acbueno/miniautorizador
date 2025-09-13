@@ -26,7 +26,7 @@ public class TrasacaoController {
 	@PostMapping
 	public ResponseEntity<TransacaoDTO> realizar(@RequestBody TransacaoDTO dto) {
 		Cartao cartao = cartaoService.consultarCartao(dto.getNumeroCartao());
-		Transacao tx = transacaoService.processarTransacao(cartao, dto);
+		Transacao tx = transacaoService.processarTransacao(cartao.getNumeroCartao(), dto);
 		
 		if(!tx.getStatus().equals("OK")) {
 			throw new RuntimeException(tx.getStatus());
