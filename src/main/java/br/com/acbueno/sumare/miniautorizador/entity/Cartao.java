@@ -24,7 +24,6 @@ import lombok.Setter;
 @Entity
 @Table(name = "cartao")
 @Getter
-@Service
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
