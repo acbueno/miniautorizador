@@ -1,4 +1,4 @@
-package br.com.acbueno.sumare.miniautorizador.service.controller;
+package br.com.acbueno.sumare.miniautorizador.controller;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;

@@ -54,7 +54,5 @@ public class Cartao {
         tx.setCartao(this);
         transacoes.add(tx);
     }
-    
-    
 
 }
